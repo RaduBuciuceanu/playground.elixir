@@ -21,7 +21,8 @@ defmodule Playground.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:witchcraft, git: "https://github.com/witchcrafters/witchcraft.git", tag: "0.1.0"},
+      {:algae, git: "git@github.com:witchcrafters/algae.git", branch: "main"},
+      {:witchcraft, git: "git@github.com:witchcrafters/witchcraft.git", branch: "main", override: true},
     ]
   end
 end
