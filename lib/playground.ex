@@ -110,8 +110,12 @@ end
 defmodule Playground.Presentation.CreateName do
   use Playground.Behaviour
 
+  alias Playground.Domain
+
   def execute(input) do
-    Either.Left.new
+    result = Reader.run(Domain.CreateName.execute(), %{input: input})
+
+    Either.Left.new(result)
   end
 end
 
