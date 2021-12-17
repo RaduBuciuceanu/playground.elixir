@@ -111,11 +111,22 @@ defmodule Playground.Presentation.CreateName do
   use Playground.Behaviour
 
   alias Playground.Domain
+  alias Playground.Access
+  alias Playground.Validation
+  alias Playground.Data
+  alias Playground.Print
 
   def execute(input) do
-    result = Reader.run(Domain.CreateName.execute(), %{input: input})
+    result =
+      Reader.run(Domain.CreateName.execute(), %{
+        input: input,
+        validate_access: &Access.CreateName.validate/0,
+        validate_input: &Validation.CraeteName.validate/0,
+        create_in_db: &Data.CreateName.create/0,
+        print_creation: &Print.CreateName.print/0
+      })
 
-    Either.Left.new(result)
+    Either.Right.new(result)
   end
 end
 
