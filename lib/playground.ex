@@ -139,8 +139,8 @@ defmodule Playground do
     created = CreateName.execute("Ion")
 
     case created do
-      %Either.Left{left: value} -> value
-      %Either.Right{right: value} -> value
+      %Either.Right{right: value} -> %{status: 200, value: value}
+      %Either.Left{left: value} -> %{status: 500, value: value}
     end
   end
 end
