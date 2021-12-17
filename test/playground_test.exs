@@ -4,7 +4,5 @@ defmodule PlaygroundTest do
 
   test "greets the world" do
     IO.inspect(Playground.hello())
-
-    # assert Playground.hello() == :world
   end
 end
