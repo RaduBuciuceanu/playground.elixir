@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Semigroupoid do
-  defprotocol Semigroupoid do
-    def compose(other)
-  end
+defprotocol Playground.Behaviour.Semigroupoid do
+  def compose(other)
 end

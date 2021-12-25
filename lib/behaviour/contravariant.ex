@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Contravariant do
-  defprotocol Contravariant do
-    def contramap(other, function)
-  end
+defprotocol Playground.Behaviour.Contravariant do
+  def contramap(other, function)
 end

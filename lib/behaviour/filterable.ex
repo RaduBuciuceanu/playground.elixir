@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Filterable do
-  defprotocol Filterable do
-    def filter(value, predicate)
-  end
+defprotocol Playground.Behaviour.Filterable do
+  def filter(value, predicate)
 end

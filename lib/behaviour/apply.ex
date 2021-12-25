@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Apply do
-  defprotocol Apply do
-    def ap(other, function)
-  end
+defprotocol Playground.Behaviour.Apply do
+  def ap(other, function)
 end

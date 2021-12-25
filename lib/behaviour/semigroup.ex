@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Semigroup do
-  defprotocol Semigroup do
-    def concat(other)
-  end
+defprotocol Playground.Behaviour.Semigroup do
+  def concat(other)
 end
