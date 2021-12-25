@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Group do
-  defprotocol Group do
-    def invert(value)
-  end
+defprotocol Playground.Behaviour.Group do
+  def invert(value)
 end

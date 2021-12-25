@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Ord do
-  defprotocol Ord do
-    def lte(other)
-  end
+defprotocol Playground.Behaviour.Ord do
+  def lte(other)
 end

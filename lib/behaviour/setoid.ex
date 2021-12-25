@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Setoid do
-  defprotocol Setoid do
-    def equals(other)
-  end
+defprotocol Playground.Behaviour.Setoid do
+  def equals(other)
 end

@@ -1,5 +1,3 @@
-defmodule Playground.Behaviour.Category do
-  defprotocol Category do
-    def id(value)
-  end
+defprotocol Playground.Behaviour.Category do
+  def id(value)
 end
